@@ -4,7 +4,7 @@ function binaryDiagnostic() {
     let input = fs.readFileSync('./day3.txt', 'utf-8').trim().split('\n');
     let bitCount = new Array<number>(input[0].length);
     bitCount.fill(0);
-    let half = Math.floor(input.length / 2);
+    let half = input.length / 2;
     let gammaRate = "";
     let epsilonRate = "";
     let powerConsumption = 0;
